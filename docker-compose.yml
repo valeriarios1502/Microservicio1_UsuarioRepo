@@ -1,0 +1,12 @@
+version: "3"
+services:
+
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgresql+psycopg2://user:password@3.87.243.107:5432/usuarios_db
+
