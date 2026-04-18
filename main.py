@@ -7,7 +7,6 @@ app = FastAPI(title="MS1 - Usuarios")
 
 app.include_router(router)
 
-# (opcional) creación de tablas
 def create_tables():
     for i in range(10):
         try:
