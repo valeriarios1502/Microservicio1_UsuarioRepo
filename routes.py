@@ -8,7 +8,7 @@ import os
 
 router = APIRouter()
 
-MS3_URL = os.getenv("MS3_URL", "http://ms3:8002")
+MS3_URL = os.getenv("MS3_URL")
 
 @router.get("/usuarios")
 def get_usuarios(db: Session = Depends(get_db)):
